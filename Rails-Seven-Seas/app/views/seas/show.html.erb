@@ -1,0 +1,10 @@
+
+<div style="background-image: url(<%= @sea.image_url %>)">
+    <h1>Sea: <%= @sea.name %></h1>
+    <h3>Temp: <%= @sea.temperature %> degrees</h3>
+    <h3>Mood: <%= @sea.mood %></h3>
+    <h3>Fav Color: <%= @sea.favorite_color %></h3>
+    <h3>Scariest Creature: <%= @sea.scariest_creature %></h3>
+    <p><%= @sea.bio %></p>
+    <%= button_to "Delete Sea", sea_path(@sea.id), method: :delete %>
+</div>
